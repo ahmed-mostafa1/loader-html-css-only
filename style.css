@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: #000;
+}
+.load{
+    display:flex;
+    justify-content: center;
+    margin: 50px auto
+}
+.load div{
+    width:20px;
+    height:20px;
+    background-color: rgb(58, 114, 218);
+    border-radius: 50%;
+    margin: 5px;
+    animation-name: up-and-down;
+    animation-duration: .9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.load .two{
+    animation-delay: .3s;
+}
+.load .three{
+    animation-delay: .6s;
+}
+@keyframes up-and-down{
+    to{
+        opacity: .2;
+        transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
+        -moz-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        -o-transform: translateY(-20px);
+}
+}
